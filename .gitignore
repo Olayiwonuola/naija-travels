@@ -9,7 +9,8 @@
 *.vi
 *~
 *.sass-cache
-node_modules/
+node_modules
+/yes
 .tmp/
 
 # OS or Editor folders
