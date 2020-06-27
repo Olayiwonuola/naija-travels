@@ -10,7 +10,7 @@ exports.handler = function (event, context, callback) {
     body = {};
   }
 
-  if (event.body == "javascript") {
+  if (body.password == "javascript") {
     callback(null, {
       statusCode: 200,
       body: secretContent,
