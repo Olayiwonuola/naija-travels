@@ -10,14 +10,14 @@ class ClientArea {
   }
 
 events(){
- this.form('https://naija-travels.netlify.app/.netlify/functions/secret-area' , {password: this.field.value}).addEventListener('submit', e=>{
+ this.form.addEventListener('submit', e=>{
   e.preventDefault();
   this.sendRequest();
  })
 }
 
 sendRequest(){
- Axios.post.then(response =>{
+ Axios.post('https://naija-travels.netlify.app/.netlify/functions/secret-area' , {password: this.field.value}).then(response =>{
   this.form.remove();
   this.contentArea.innerHTML = response.data;
  }).catch(() =>{
