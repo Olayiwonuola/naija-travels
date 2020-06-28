@@ -1,7 +1,7 @@
 @import "normalize.css";
-@import "base/_variables";
-@import "base/_mixins";
-@import "base/_global";
+@import "modules/_variables";
+@import "modules/_mixins";
+@import "modules/_global";
 @import "modules/_large-hero";
 @import "modules/_btn";
 @import "modules/_wrapper";
@@ -18,3 +18,4 @@
 @import "modules/_reveal-item";
 @import "modules/_modal";
 @import "modules/_social-icons";
+@import "modules/_client-area";
